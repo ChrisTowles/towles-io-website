@@ -1,10 +1,22 @@
 # towles-io.github.io
 
-Todo: 
 
-nuxtjs
+## Tech stack
+- Typescript
+- [Vue CLI 3]()
+  - `yarn global add @vue/cli`
+- [Vue](https://vuejs.org/v2/guide/)
+- [Vueify](https://vuetifyjs.com/en/) - Material Design
+Component Framework
+  - [Components](https://vuetifyjs.com/en/components/api-explorer)
+- [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin) - prerender to disk
+- [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) - hosting
 
-Insperation 
+
+
+
+> Insperation 
+
 https://townshipcanada.com/developers
 
 
@@ -16,6 +28,11 @@ yarn install
 ### Compiles and hot-reloads for development
 ```
 yarn run serve
+```
+
+### Starts a server to browse details about the project
+```
+yarn run ui
 ```
 
 ### Compiles and minifies for production
@@ -45,3 +62,14 @@ yarn run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## Testing PreRender Content Locally
+
+If you want to test the that site prerender works on build you can host it locally easy enough. 
+
+```
+yarn run build
+npm install http-server -g
+http-server c:\Code\Github\towles-io.github.io\dist
+```
