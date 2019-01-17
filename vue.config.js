@@ -12,22 +12,22 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin');
 module.exports = {
   configureWebpack: config => {
 
-    //if (process.env.NODE_ENV !== 'production') return
+    if (process.env.NODE_ENV !== 'production') return
 
     return {
       plugins: [
-        new PrerenderSPAPlugin(
+        new PrerenderSPAPlugin( {
           // Absolute path to compiled SPA
-          path.resolve(__dirname, 'dist'),
+          staticDir: path.resolve(__dirname, 'dist'),
           // List of routes to prerender
-          [
+          routes: [
             '/',
             '/about',
             // s'/contact',
           ], // '/portfolio/one', '/portfolio/two', '/portfolio/three',
-          {
-              // options
-          }
+          outputDir: path.join(__dirname, 'docs'),
+
+        }
         ),
       ]
     }
