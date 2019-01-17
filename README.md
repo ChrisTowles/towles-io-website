@@ -1,5 +1,13 @@
 # towles-io.github.io
 
+Todo: 
+
+nuxtjs
+
+Insperation 
+https://townshipcanada.com/developers
+
+
 ## Project setup
 ```
 yarn install
