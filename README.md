@@ -60,6 +60,22 @@ yarn run test:e2e
 yarn run test:unit
 ```
 
+
+## Firebase
+
+
+```js
+firebase login
+
+//add one time
+firebase use --app towles-io
+
+
+// deploy
+firebase deploy
+
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 

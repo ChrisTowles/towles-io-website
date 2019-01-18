@@ -1,4 +1,5 @@
 {
+  // how to configure https://firebase.google.com/docs/hosting/full-config"
   "hosting": {
     "public": "dist",
     "ignore": [
@@ -10,6 +11,48 @@
       {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        // Specifies a CORS header for all font files
+        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      },
+      {
+        // Overrides the default 1 hour browser cache with a 2 week hour cache for all image files
+        "source": "**/*.@(jpg|jpeg|gif|png|svg)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=1209600"
+          }
+        ]
+      },
+      {
+        // Overrides the default 1 hour browser cache with a 2 week cache for javascript and css
+        "source": "**/*.@(js|css|map)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=1209600"
+          }
+        ]
+      },
+      {
+        // Sets the cache header for 404 pages to cache for 5 minutes
+        "source": "404.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=300"
+          }
+        ]
       }
     ]
   }
