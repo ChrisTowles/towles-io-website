@@ -15,7 +15,11 @@
     </v-toolbar>
 
     <v-content>
-      <router-view/>
+      <v-container fluid >
+        <v-layout >
+          <router-view/>
+        </v-layout>
+      </v-container>
     </v-content>
   </v-app>
 </template>
