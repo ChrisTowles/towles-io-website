@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+  <div>
+        
     <h2 id="who-we-are">Right Angled Triangle Solver</h2>
     
 

@@ -39,7 +39,10 @@ module.exports = {
           routes: [  //todo: get route from vue routes.ts
             '/',
             '/about',
-            // s'/contact',
+            '/right-angled-triangle-solver',
+            '/right-angled-triangle-solver/privacy-policy',
+            '/right-angled-triangle-solver/terms-and-conditions',
+            
           ], // '/portfolio/one', '/portfolio/two', '/portfolio/three',
           outputDir: OUTPUT_DIR,
 

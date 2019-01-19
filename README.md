@@ -3,7 +3,7 @@
 
 ## Tech stack
 - Typescript
-- [Vue CLI 3]()
+- [Vue CLI 3]
   - `yarn global add @vue/cli`
 - [Vue](https://vuejs.org/v2/guide/)
 - [Vueify](https://vuetifyjs.com/en/) - Material Design
@@ -13,12 +13,14 @@ Component Framework
 - [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) - hosting
 
 
+## VScode plugins
 
+- Prettier - Code formatter
+- vetur - vue plugin
 
 > Insperation 
 
 https://townshipcanada.com/developers
-
 
 ## Project setup
 ```
@@ -75,6 +77,13 @@ firebase use --app towles-io
 firebase deploy
 
 ```
+
+## DNS Hosting
+
+At https://www.namecheap.com/
+
+towles.io expires Sep 25, 2021
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
