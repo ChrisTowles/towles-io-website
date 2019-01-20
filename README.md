@@ -10,7 +10,10 @@
 Component Framework
   - [Components](https://vuetifyjs.com/en/components/api-explorer)
 - [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin) - prerender to disk
-- [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) - hosting
+- Firebase Hosting
+- CircleCI for CI - [towles-io-website](https://circleci.com/gh/towles-io/towles-io-website)
+
+
 
 
 ## VScode plugins
