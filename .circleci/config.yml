@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image:  circleci/node:latest-browsers
+      - image:  circleci/node:latest-browsers #  Note: browsers version needed for prerender-spa-plugin to run chrome with puppeteer. 
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
