@@ -1,26 +1,28 @@
 <template>
-  <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Towles.io</span>
-        <span class="pl-2 font-weight-light">DEVELOPMENT</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn flat to="/">
-        <span class="mr-2">Home</span>
-      </v-btn>
-      <v-btn flat to="/about">
-        <span class="mr-2">About</span>
-      </v-btn>
-    </v-toolbar>
+  <div>
+    <b-navbar toggleable="md" type="dark" variant="primary">
+      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+      <b-container>
+        <b-navbar-brand to="/">Towles.io</b-navbar-brand>
 
-    <v-content>
-      <v-container fluid >
-        <v-layout >
+        <b-collapse is-nav id="nav_collapse">
+          <b-navbar-nav>
+            
+            <b-nav-item-dropdown text="Apps" right>
+              <b-dropdown-item to="/right-angled-triangle-solver">Right Angled Triangle Solver</b-dropdown-item>
+              <b-dropdown-item href="#">Hangman</b-dropdown-item>
+            </b-nav-item-dropdown>
+            <b-nav-item to="/about">About</b-nav-item>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-container>
+    </b-navbar>
+
+    <content>
+      <b-container>
           <router-view/>
-        </v-layout>
-      </v-container>
-    </v-content>
-  </v-app>
+      </b-container>
+    </content>
+  </div>
 </template>
 

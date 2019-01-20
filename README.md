@@ -7,8 +7,8 @@ Project is hosted at https://towles.io and is just a landing page for google pla
 - Vue CLI 3
   - `yarn global add @vue/cli`
 - [Vue](https://vuejs.org/v2/guide/)
-- [Vueify](https://vuetifyjs.com/en/) Material Design
-  - [Components](https://vuetifyjs.com/en/components/api-explorer)
+- [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [bootstrap-vue](https://bootstrap-vue.js.org/docs) Material Design
 - [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin) - prerender to disk for better SEO.
 - Firebase Hosting
 - CircleCI for CI - [towles-io-website](https://circleci.com/gh/towles-io/towles-io-website)
@@ -18,8 +18,8 @@ Project is hosted at https://towles.io and is just a landing page for google pla
 - Prettier - Code formatter
 - vetur - vue plugin
 
-
 ## Project Commands
+
 ```js
 yarn install
 yarn run serve
@@ -39,8 +39,7 @@ Google firebase hosting is used.
 
 https://console.firebase.google.com/u/0/project/towles-io/settings/iam
 
-__Note:__ the build process uses `prerender-spa-plugin` to generate an index at routes for faster response but you have to update the `vue.config.js` with all the routes for it to work. 
-
+__Note:__ the build process uses `prerender-spa-plugin` to generate an index at routes for faster response but you have to update the `vue.config.js` with all the routes for it to work.
 
 ```js
 firebase login
